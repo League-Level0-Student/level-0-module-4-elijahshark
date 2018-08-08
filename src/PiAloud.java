@@ -8,8 +8,20 @@ import java.util.Scanner;
 public class PiAloud {
 
 	// 1. Make a main method and make sure your program can run
+public static void main(String[] args) {
+	String Pi = "3.14564424234342";
+	Pi.charAt(0);
+	Pi.charAt(1);
+	
+	
+	
+	
 
-	// 2. Make a String variable to hold the value of Pi. You could use http://www.piday.org/million/ for the value.
+for (int i=0;i<10;i++) {
+
+
+}
+// 2. Make a String variable to hold the value of Pi. You could use http://www.piday.org/million/ for the value.
 
 	// 3. Print out some digits of Pi. The first value is "pi.charAt(0)", the second is "pi.charAt(1)"
 
