@@ -9,17 +9,18 @@ public class PiAloud {
 
 	// 1. Make a main method and make sure your program can run
 public static void main(String[] args) {
-	String Pi = "3.14564424234342";
+	String Pi = "3.145644242";
 	Pi.charAt(0);
-	Pi.charAt(1);
+	Pi.charAt(1);    
 	
 	
 	
 	
 
-for (int i=0;i<10;i++) {
-
-
+for (int i=0;i<Pi.length();i++){ 
+System.out.println(Pi.charAt(i));
+speak(Pi.charAt(i));
+}
 }
 // 2. Make a String variable to hold the value of Pi. You could use http://www.piday.org/million/ for the value.
 
