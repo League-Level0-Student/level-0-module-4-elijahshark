@@ -1,20 +1,34 @@
-int y = 600;
-int x = 600;
+import ddf.minim.*;
+Minim minim = new Minim(this); 
+AudioSample BASS;
+
+void playBASS() {
+     BASS.stop();
+     BASS.trigger();
+}
+int y = 500;
+int x = 500;
 PImage creeper;
 void setup(){
-size(1200, 1200);
+size(1000, 1000);
 PImage minecraft = loadImage("minecraft.jpg");
-minecraft.resize(1200,1200);
+minecraft.resize(1000,1000);
 background(minecraft);
 creeper=loadImage("creeper.png");
 creeper.resize(5, 5);
+if (mouseX== x && mouseY== y){
+playBASS();
+}
+if (x>495 && x<505){
+}
+
 
 
 }
 
 
 void draw (){
- 
+ println("X: " + mouseX + " Y: " + mouseY);
   image(creeper, x, y);  
   if(mousePressed){
   ellipse (mouseX,mouseY,5,5);
