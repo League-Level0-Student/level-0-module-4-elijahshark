@@ -16,15 +16,14 @@ minecraft.resize(1000,1000);
 background(minecraft);
 creeper=loadImage("creeper.png");
 creeper.resize(5, 5);
-if (mouseX== x && mouseY== y){
-playBASS();
-}
-if (x>495 && x<505){
+     BASS = minim.loadSample("BASS.wav");
 }
 
 
 
-}
+
+
+
 
 
 void draw (){
@@ -32,8 +31,8 @@ void draw (){
   image(creeper, x, y);  
   if(mousePressed){
   ellipse (mouseX,mouseY,5,5);
-if (distance(mouseX,mouseY,x,y)<5){
-
+if (mouseX>500&&mouseX<505&&mouseY>500&&mouseY<505){
+playBASS();
 }
 }
 }
