@@ -38,9 +38,12 @@ public class SleepyHead {
 			isWeekday = false;
 		}
 
-		if (isVacation == true && isWeekday == false) {
+		if (isVacation == true || isWeekday == false) {
+			JOptionPane.showMessageDialog(null, "SLEEEP INNNN");
+		} else if (isWeekday == true) {
+			JOptionPane.showMessageDialog(null, "GET UP LAZY BONE");
+		} else if (isVacation == true && isWeekday == true) {
 			JOptionPane.showMessageDialog(null, "SLEEEP INNNN");
 		}
-
 	}
 }
