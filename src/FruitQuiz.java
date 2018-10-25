@@ -41,14 +41,16 @@ public class FruitQuiz extends KeyAdapter {
 				correct();
 			}
 			// 4. Call the correct() method
-			correct();
+			 
 			// 7. Use the nextQuestion() method to go to question2
-
+			nextQuestion("question2");
 			// 8. else (if they touched something else)
 
 			// 9. Call the incorrect() method
-
-		}
+if (keyCode != C) {
+incorrect();
+}		
+}
 
 	}
 
@@ -57,13 +59,13 @@ public class FruitQuiz extends KeyAdapter {
 		// the default package. It must be a .wav file.
 		// There are lots on freesound.org
 		// 6. Use the playSound method to play your sound
-
+playSound("323703__reitanna__funny-yay (1).wav");
 	}
 
 	private void incorrect() {
 		// 10. Find a sound for wrong answers and put it in the default package. Use the
 		// playSound method to play it.
-
+playSound("wrong.wav");
 	}
 
 	private void nextQuestion(JLabel newQuestion) {
