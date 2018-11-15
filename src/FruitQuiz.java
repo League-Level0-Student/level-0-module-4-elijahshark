@@ -19,9 +19,9 @@ public class FruitQuiz extends KeyAdapter {
 		question2 = new JLabel(
 				"<html>what is the two colors of the scar? <br> A: Golden,purple <br> B: blue <br> C: green</html>");
 		question3 = new JLabel(
-				"<html>what is the two colors of the scar? <br> A: Golden,purple <br> B: blue <br> C: green</html>");
+				"<html> What is the lie? <br> A: I like anime <br> B: I love pooping <br> C: I love coding</html>");
 		question4 = new JLabel(
-				"<html>what is the two colors of the scar? <br> A: Golden,purple <br> B: blue <br> C: green</html>");
+				"<html> what skin do I have in fortnite? <br> A: Rex <br> B: Love Ranger <br> C: Cuddle Team Leader</html>");
 		
 		// 11. Make another question called "question2". Use question1 above as a guide.
 		// ...
@@ -42,6 +42,18 @@ public class FruitQuiz extends KeyAdapter {
 		// 12. If question2 is showing,
 
 		// 13. check if it is right or wrong like you did for question1
+		if (question4.isShowing()) {
+			if (A == keyCode) {
+				correct();
+				System.exit(0);
+			}
+		}
+		if (question3.isShowing()) {
+			if (B == keyCode) {
+				correct();
+				nextQuestion(question4);
+			}
+		}
 		if (question2.isShowing()) {
 			if (A == keyCode) {
 				correct();
@@ -63,6 +75,13 @@ public class FruitQuiz extends KeyAdapter {
 			// 9. Call the incorrect() method
 			if (keyCode != C) {
 				incorrect();
+			try {
+				Thread.sleep(3500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+				System.exit(0);
 			}
 		}
 

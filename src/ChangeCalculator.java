@@ -26,7 +26,7 @@ int num2 = Integer.parseInt(ans);
 		// Calculate how much money the user has and save it in a double variable 
 double money = 0.25 * num2 + 0.10 * num1 + 0.05 * num ;
 		// Tell the user how much money they have
-JOptionPane.showMessageDialog(null, " you have "  + money + " dolars" );
+JOptionPane.showMessageDialog(null, " you have "  + money + " dollars" );
 	}
 }
 
